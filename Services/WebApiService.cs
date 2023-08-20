@@ -180,11 +180,11 @@ namespace DorsaFinUI.Services
             }
             return list;
         }
-        private static string getToken()
-        {
-            var u = HttpContext.Current.User as ClaimsPrincipal;
-            return u.FindFirst("id_token").Value;
-        }
+        //private static string getToken()
+        //{
+        //    var u = HttpContext.Current.User as ClaimsPrincipal;
+        //    return u.FindFirst("id_token").Value;
+        //}
 
         private static string apiResult(string Route, Dictionary<string, string> parms)
         {
@@ -197,7 +197,7 @@ namespace DorsaFinUI.Services
                 client.DefaultRequestHeaders.Accept.Add(
                     new MediaTypeWithQualityHeaderValue("application/json"));
                 //var token = getToken();
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", getToken());
+                //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", getToken());
                 //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 //var response = client.GetAsync($"SearchCustomer?term=applied"); // + id.ToString());
                 var response = client.GetAsync(Route);
@@ -222,7 +222,7 @@ namespace DorsaFinUI.Services
                 client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
                 //var token = getToken();
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", getToken());
+                //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", getToken());
                 var response = client.SendAsync(request);
                 response.Wait();
                 var json = response.Result.Content.ReadAsStringAsync().Result;

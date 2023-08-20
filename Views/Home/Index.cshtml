@@ -1,30 +1,67 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
-<div class="jumbotron">
-    <h1>Dorsa Financial</h1>
-    <p class="lead">Pay me bitch.</p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+﻿
+@*<div class="col-lg-12">
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="padding:4px; margin: 1px; width:200px; background:#d4e4f3; font-weight:bold; font-size: 15px; text-align:center;">Symbol</th>
+                <th>Description</th>
+                <th>Exchange</th>
+                <th>Type</th>
+                <th>Last</th>
+                <th>Change</th>
+                <th>Volume</th>
+                <th>Open</th>
+                <th>High</th>
+                <th>Low</th>
+                <th>Close</th>
+                <th>Bid</th>
+                <th>Ask</th>
+                <th>Underlying</th>
+                <th>Strike</th>
+                <th>Delta</th>
+                <th>Gamma</th>
+                <th>Theta</th>
+                <th>Vega</th>
+                <th>Rho</th>
+                <th>Phi</th>
+                <th>BidIV</th>
+                <th>MidIV</th>
+                <th>AskIV</th>
+                <th>SmvVol</th>
+                <th>UpdatedAt</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var option in Model)
+            {
+                <tr>
+                    <td>@option.Symbol</td>
+                    <td>@option.Description</td>
+                    <td>@option.Exchange</td>
+                    <td>@option.Type</td>
+                    <td>@option.Last</td>
+                    <td>@option.Change</td>
+                    <td>@option.Volume</td>
+                    <td>@option.Open</td>
+                    <td>@option.High</td>
+                    <td>@option.Low</td>
+                    <td>@option.Close</td>
+                    <td>@option.Bid</td>
+                    <td>@option.Ask</td>
+                    <td>@option.Underlying</td>
+                    <td>@option.Strike</td>
+                    <td>@option.Greeks.Delta</td>
+                    <td>@option.Greeks.Gamma</td>
+                    <td>@option.Greeks.Theta</td>
+                    <td>@option.Greeks.Vega</td>
+                    <td>@option.Greeks.Rho</td>
+                    <td>@option.Greeks.Phi</td>
+                    <td>@option.Greeks.BidIV</td>
+                    <td>@option.Greeks.MidIV</td>
+                    <td>@option.Greeks.AskIV</td>
+                    <td>@option.Greeks.SmvVol</td>
+                    <td>@option.Greeks.UpdatedAt</td>
+                </tr>
+            }
+        </tbody>
+    </table>*@

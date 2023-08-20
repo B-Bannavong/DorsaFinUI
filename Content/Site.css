@@ -1,24 +1,71 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿html, body {
+    margin: 0;
+    padding: 0;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body {
+    font-family: Arial, sans-serif;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.navbar {
+    display: flex;
+    text-align:center;
+/*    justify-content: space-between;*/
+    align-items: center;
+    background-color: #2D848A;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 0;
+    position: relative;
+    font-family: Montserrat;
+
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    /* border: solid 2px black;
+    border-radius: 3px;
+
+    border-top: none;
+    border-bottom: none;
+    height: 100vh;*/
+
+    border-right: 2px solid white;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.navbar::before,
+.navbar::after {
+    content: "";
+    display: block;
+    height: 0;
+    border: none;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+    .menu li {
+        margin: 0 15px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+    }
+
+        .menu a:hover {
+            color: #f9a825;
+        }
+
+.container {
+    padding: 20px;
 }

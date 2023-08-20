@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DorsaFinUI.Models;
+using DorsaFinUI.Services;
+
 
 namespace DorsaFinUI.Controllers
 {
@@ -10,7 +13,9 @@ namespace DorsaFinUI.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            //var model = WebApiService.getApiList<Option>("options/?lTicker=AAPL&lExpiration=2023-11-17", null);
+
+            return View(/*model*/);
         }
 
         public ActionResult About()
